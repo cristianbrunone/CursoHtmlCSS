@@ -1,0 +1,297 @@
+/* geral */
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h5,
+p,
+span {
+    margin: 0;
+    color: #666;
+}
+
+.container {
+    max-width: 1920px;
+    max-width: 100%;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+
+/* NavBar */
+
+nav {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    background-color: #FFF;
+    border-bottom: 1px solid #CCC;
+}
+
+nav:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.nav-container {
+    max-width: 1200px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+}
+
+.nav-container ul {
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+}
+
+.nav-container li {
+    list-style: none;
+    float: left;
+    margin: 0 15px
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: #666;
+    transition: .5s;
+}
+
+.nav-container li a:hover {
+    color: #3381F3;
+}
+
+
+/* Banner */
+#main-banner {
+    background: url('../assets/images/banner.png') no-repeat;
+    background-size: cover;
+    background-position: 0 55%;
+    position: relative;
+    margin-top: 100px;
+}
+
+#search-form {
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15em;
+    padding-bottom: 15em;
+    text-align: center;
+}
+
+#search-form h1 {
+    font-size: 40px;
+}
+
+#search-form p {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#search-form input,
+#search-form select {
+    background-color: #FFF;
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+#search-form input[type=submit] {
+    background-color: #3381F3;
+    text-transform: uppercase;
+    color: #FFF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#search-form input[type-submit]:hover {
+    background-color: #2b79EB;
+}
+
+
+/* seção de ultimos empregos */
+#lastjobs-container {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lastjobs-container h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+#lastjobs-container ul {
+    padding-top: 0;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+}
+
+#lastjobs-container ul li {
+    list-style: none;
+    text-align: left;
+    border-bottom: solid 1px #CCC;
+    height: 80px;
+    position: relative;
+}
+
+#lastjobs-container ul li:last-child {
+    border: none;
+}
+
+.clickarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Company img */
+.company-box {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    padding-left: 1%;
+}
+
+.company-box img {
+    width: 100px;
+    margin-top: 2.5px;
+}
+
+.company-info {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 10px;
+    text-align: left;
+    position: absolute;
+}
+
+.company-info h3 {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.company-info p {
+    font-weight: bold;
+}
+
+/* company locality */
+.locality {
+    color: #6d6d6d;
+    display: inline-block;
+    width: 25%;
+    position: absolute;
+    height: 100%;
+    line-height: 80px;
+}
+
+.locality i,
+.locality p {
+    display: inline-block;
+}
+
+.locality i {
+    margin-right: 5px;
+}
+
+/*Company job type*/
+
+.job-type {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    padding-top: 30px;
+    right: 1%;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.job-type span {
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+.clt {
+    background-color: #735fee;
+}
+
+.pj {
+    background-color: #5BBC2E;
+}
+
+.homeoffice {
+    background-color: #FF5A5F;
+}
+
+.logo-empresa {
+    padding-top: 20px;
+}
+
+/* see more div */
+
+.btnjobs-container {
+    margin-top: 50px;
+}
+
+.btn-jobs {
+    text-transform: uppercase;
+    background-color: #FFF;
+    color: #3381f3;
+    border: 2px solid #3381F3;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.btn-jobs:hover {
+    background-color: #3381F3;
+    color: #FFF;
+}
