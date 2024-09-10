@@ -295,3 +295,316 @@ nav:after {
     background-color: #3381F3;
     color: #FFF;
 }
+
+/* sen jobs container */
+
+#sendjobs-container {
+    background: url('../assets/images/banner.png') no-repeat;
+    background-size: cover;
+    background-position: 0 25%;
+    padding: 15em;
+}
+
+#sendjobs-container h2,
+#sendjobs-container p {
+    width: 600px;
+    color: #666;
+}
+
+#sendjobs-container h2 {
+    font-size: 36px;
+    margin-bottom: 50px
+}
+
+#sendjobs-container p {
+    font-size: 18px;
+    margin-bottom: 50px
+}
+
+.light-btn {
+    background-color: #666;
+    border: 2px solid rgb(71, 71, 71);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.light-btn:hover {
+    background-color: transparent;
+    color: #666;
+}
+
+#status-container {
+    text-align: center;
+    padding: 5em 0;
+}
+
+.title-center {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.p-center {
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+.status-box {
+    display: inline-block;
+    text-align: center;
+    width: 24.5%;
+    margin-top: 80px;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    height: 100px;
+}
+
+.status-box:nth-child(2) {
+    border: none;
+}
+
+.status-box:nth-child(3) {
+    border-right: none;
+}
+
+.status-qtd {
+    font-size: 36px;
+}
+
+.status-text {
+    font-size: 20px;
+}
+
+#testmony-container {
+    background: url('../assets/images/img.jpg') no-repeat;
+    background-size: cover;
+    padding: 10em 0;
+}
+
+#testmony-container h2,
+#testmony-container p {
+    color: #FFF;
+    text-align: center;
+}
+
+#testmony-container h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+#testmony-container p {
+    margin-bottom: 50px;
+}
+
+.testmony-box {
+    display: inline-block;
+    width: 24.5%;
+    text-align: center;
+}
+
+#testmony-container .testmony-box .testmony-msg {
+    background-color: #FFF;
+    color: #666;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    position: relative;
+    margin: 35px auto;
+    font-style: italic;
+}
+
+.testmony-msg:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #FFF;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testmony-box img {
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+
+.testmony-name {
+    font-weight: bold;
+}
+
+#blog-container {
+    text-align: center;
+    padding: 5em 0;
+}
+
+#blog-container .p-center {
+    margin-bottom: 60px;
+}
+
+.article-box {
+    display: inline-block;
+    width: 31%;
+    padding: 0 1%;
+    text-align: left;
+}
+
+.article-box img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.article-box h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.article-box h4 a {
+    text-decoration: none;
+    color: #666;
+}
+
+.article-date {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.article-resume {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.articlebtn {
+    background-color: #3381F3;
+    border-color: #3381F3;
+    color: #FFF;
+}
+
+.articlebtn:hover {
+    background-color: #FFF;
+    color: #3381F3;
+}
+
+/* footer */
+footer {
+    background-color: #666;
+    padding-top: 5em;
+    padding-bottom: 40px;
+    border-top: 5px solid #3381F3;
+}
+
+footer h2,
+footer p,
+footer a,
+footer span {
+    color: #d1d1d1;
+}
+
+footer h2 {
+    font-weight: 400;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+}
+
+.footer-box {
+    width: 31%;
+    padding: 1%;
+    float: left;
+}
+
+.footer .wrapper:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.company-footer {
+    width: 80%;
+}
+
+.company-footer h2 {
+    margin-top: 20px;
+}
+
+.company-footer h2,
+.company-footer p {
+    margin-bottom: 20px;
+}
+
+.footer-list li {
+    margin-bottom: 15px;
+}
+
+.footer-list a {
+    transition: .5s;
+}
+
+.footer-list a:hover {
+    color: #FFF;
+}
+
+.footer-list li:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.article-footer {
+    width: 80%;
+}
+
+.footer-list.footer-article-list span {
+    display: block;
+    float: none;
+}
+
+.fab {
+    font-size: 30px;
+    margin-right: 10px;
+    float: left;
+}
+
+.footer-list li span {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #b2b2b2;
+}
+
+.footer-bottom p {
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.footer-box .footer-list .size-icon {
+    font-size: 12px;
+    display: inline-block;
+    padding-top: -100px;
+}
