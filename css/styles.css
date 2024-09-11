@@ -3,7 +3,6 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
-
 body {
     margin: 0;
 }
@@ -24,7 +23,6 @@ span {
 }
 
 /* Header */
-
 header {
     position: relative;
     top: 0;
@@ -33,7 +31,6 @@ header {
 }
 
 /* NavBar */
-
 nav {
     position: fixed;
     top: 0;
@@ -73,7 +70,7 @@ nav:after {
 .nav-container li {
     list-style: none;
     float: left;
-    margin: 0 15px
+    margin: 0 15px;
 }
 
 .nav-container li a {
@@ -85,7 +82,6 @@ nav:after {
 .nav-container li a:hover {
     color: #3381F3;
 }
-
 
 /* Banner */
 #main-banner {
@@ -135,12 +131,11 @@ nav:after {
     transition: 0.5s;
 }
 
-#search-form input[type-submit]:hover {
+#search-form input[type=submit]:hover {
     background-color: #2b79EB;
 }
 
-
-/* seção de ultimos empregos */
+/* seção de últimos empregos */
 #lastjobs-container {
     text-align: center;
     padding: 100px 0;
@@ -234,7 +229,6 @@ nav:after {
 }
 
 /*Company job type*/
-
 .job-type {
     display: inline-block;
     width: 20%;
@@ -274,7 +268,6 @@ nav:after {
 }
 
 /* see more div */
-
 .btnjobs-container {
     margin-top: 50px;
 }
@@ -296,8 +289,7 @@ nav:after {
     color: #FFF;
 }
 
-/* sen jobs container */
-
+/* send jobs container */
 #sendjobs-container {
     background: url('../assets/images/banner.png') no-repeat;
     background-size: cover;
@@ -313,12 +305,12 @@ nav:after {
 
 #sendjobs-container h2 {
     font-size: 36px;
-    margin-bottom: 50px
+    margin-bottom: 50px;
 }
 
 #sendjobs-container p {
     font-size: 18px;
-    margin-bottom: 50px
+    margin-bottom: 50px;
 }
 
 .light-btn {
@@ -488,13 +480,13 @@ nav:after {
     margin-bottom: 30px;
 }
 
-.articlebtn {
+.article-btn {
     background-color: #3381F3;
     border-color: #3381F3;
     color: #FFF;
 }
 
-.articlebtn:hover {
+.article-btn:hover {
     background-color: #FFF;
     color: #3381F3;
 }
@@ -505,6 +497,8 @@ footer {
     padding-top: 5em;
     padding-bottom: 40px;
     border-top: 5px solid #3381F3;
+    position: relative;
+    /* Adicionado para garantir o posicionamento correto do footer-bottom */
 }
 
 footer h2,
@@ -573,7 +567,7 @@ footer li {
     display: block;
 }
 
-.article-footer {
+.articles-footer {
     width: 80%;
 }
 
@@ -582,29 +576,131 @@ footer li {
     float: none;
 }
 
+.footer-list {
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 10px;
+}
+
+.footer-list a {
+    display: flex;
+    align-items: center;
+    color: #d1d1d1;
+}
+
+.footer-list a:hover {
+    color: #FFF;
+}
+
 .fab {
-    font-size: 30px;
+    font-size: 12px;
     margin-right: 10px;
-    float: left;
 }
 
 .footer-list li span {
-    float: left;
-    height: 30px;
-    line-height: 30px;
+    line-height: 24px;
 }
 
 .footer-bottom {
     border-top: 1px solid #b2b2b2;
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    clear: both;
+    /* Garantir que o footer-bottom não fique sobreposto por outros elementos */
 }
 
 .footer-bottom p {
     font-weight: 600;
-    margin-top: 40px;
+    margin: 0;
 }
 
-.footer-box .footer-list .size-icon {
-    font-size: 12px;
-    display: inline-block;
-    padding-top: -100px;
+/* responsive */
+
+@media screen and (max-width: 1024px) {
+    #logo {
+        position: absolute;
+        left: 50px;
+    }
+
+    .nav-container ul {
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    .nav-container ul li {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    #search-form {
+        padding-top: 25em;
+        padding-bottom: 5em;
+    }
+
+    #search-form form {
+        width: 60%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #search-form form input,
+    #search-form form select {
+        display: block;
+        margin: 0;
+        margin-bottom: 25px;
+        width: 100%;
+        border-width: 0;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+
+    #lastjobs-container.wrapper,
+    #status-container.wrapper,
+    #blog-container.wrapper,
+    .wrapper {
+        max-width: 960px;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .company-box {
+        width: 46%;
+        padding-left: 1em;
+    }
+
+    .company-box .company-info h3 {
+        font-size: 1em;
+    }
+
+    .company-box,
+    .company-info p,
+    .locality i,
+    .locality p,
+    .job-type span {
+        font-size: .8em;
+    }
+
+    .job-type {
+        right: 1em;
+    }
+
+    #sendjobs-inner h2, #sendjobs-inner p {
+        text-shadow: .5px .5px #000;
+    }
+
+
+
+
 }
