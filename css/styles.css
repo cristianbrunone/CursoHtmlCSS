@@ -30,6 +30,11 @@ header {
     width: 100%;
 }
 
+/* hide on desktop */
+.nav-container .btn-menumobile {
+    display: none;
+}
+
 /* NavBar */
 nav {
     position: fixed;
@@ -696,11 +701,84 @@ footer li {
         right: 1em;
     }
 
-    #sendjobs-inner h2, #sendjobs-inner p {
+    #sendjobs-inner h2,
+    #sendjobs-inner p {
         text-shadow: .5px .5px #000;
     }
 
+    .status-box {
+        width: 49.4%;
+        border: none;
+    }
 
+    .status-box:nth-child(1),
+    .status-box:nth-child(3) {
+        border-right: 1px solid #DDD;
+    }
 
+    .testmony-box {
+        width: 49.4%;
+    }
 
+    .article-box {
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin-bottom: 3em;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .nav-container .btn-menumobile {
+        display: block !important;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        height: 4em;
+    }
+
+    #logo {
+        left: 2em;
+        height: 2em;
+        width: 2em;
+        margin-top: 1em;
+    }
+
+    .btn-menumobile {
+        display: block;
+        font-size: 1.75em;
+        color: #CCC;
+        position: absolute;
+        right: 1.5em;
+        top: .75em;
+    }
+
+    .nav-container ul {
+        position: relative;
+        top: 4em;
+        height: 3em;
+        line-height: 3em;
+        display: block;
+    }
+
+    .nav-container ul li {
+        display: block;
+        background: #FFF;
+        margin: 0;
+        border-top: 1px solid #CCC;
+    }
+
+    .nav-container ul li a {
+        font-size: 1em;
+    }
+
+    .open {
+        display: block !important;
+    }
 }
